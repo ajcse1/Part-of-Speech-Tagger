@@ -1,10 +1,15 @@
 #ALGORITHMS
 
 **TRAINING:**            def train(self, data)
+
 We are keeping the trained meta-data in the following data structures:
+
     self.priors = dict()        # OBSERVED VARIABLES:       prior probabilities of words P(Wi); We tried using this information for best method implementation but shunned it later!
+
     self.pos_priors = dict()    # UNOBSERVED VARIABLES:     prior probabilities of POS-labels P(Si), or call it probabilities of POS-tags or states Si
+
     self.e_p = dict()           # EMISSION PROBABILITIES:   P(Wi | Si), i.e., Emission of observation Wi in state Si
+    
     self.t_p = dict()           # TRANSITION PROBABILITIES: P(Sj | Si), i.e., Transition from past POS state Si to current POS state Sj
 
 
